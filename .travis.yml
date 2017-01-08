@@ -2,14 +2,7 @@
 language: cpp
 osx_image: xcode8.2
 
-befor_install:
-  - gem install xcode8.2
-  - gem install xcpretty
-
-befor_script:
-  - set -o pipefail
-
-script: make
-
+script:
+  - xcodebuild -scheme XcodeCITest -workspace XcodeCITest.xcodeproj/project.xcworkspace
 #xcode_project: XcodeCITest.xcodeproj
 #xcode_scheme: XcodeCITest
