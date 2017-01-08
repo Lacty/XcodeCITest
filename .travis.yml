@@ -4,4 +4,6 @@ os: osx
 osx_image: xcode8.2
 
 script:
+  - git clone https://github.com/Lacty/fizzBuzzh.git
+  - cp fizzBuzzh/fizzBuzz.h XcodeCITest
   - xcodebuild -scheme XcodeCITest -workspace XcodeCITest.xcodeproj/project.xcworkspace
