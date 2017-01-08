@@ -3,7 +3,9 @@ language: cpp
 os: osx
 osx_image: xcode8.2
 
-script:
-  - xcodebuild -scheme XcodeCITest -workspace XcodeCITest.xcodeproj/project.xcworkspace
-#xcode_project: XcodeCITest.xcodeproj
-#xcode_scheme: XcodeCITest
+#script:
+#  - xcodebuild -scheme XcodeCITest -workspace XcodeCITest.xcodeproj/project.xcworkspace
+xcode_project: XcodeCITest.xcodeproj
+xcode_scheme: XcodeCITest
+
+script: make
