@@ -1,8 +1,12 @@
 
 language: c++
-
 osx_image: xcode8.2
+
+befor_install:
+  - gem install xcpretty
+
+befor_script:
+  - set -o pipefail
+
 xcode_project: XcodeCITest.xcodeproj
 xcode_scheme: XcodeCITest
-
-script: make
