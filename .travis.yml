@@ -3,6 +3,7 @@ language: cpp
 osx_image: xcode8.2
 
 befor_install:
+  - gem install xcode8.2
   - gem install xcpretty
 
 befor_script:
