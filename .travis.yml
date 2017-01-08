@@ -8,5 +8,7 @@ befor_install:
 befor_script:
   - set -o pipefail
 
-xcode_project: XcodeCITest.xcodeproj
-xcode_scheme: XcodeCITest
+script: make
+
+#xcode_project: XcodeCITest.xcodeproj
+#xcode_scheme: XcodeCITest
