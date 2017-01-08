@@ -4,3 +4,5 @@ language: c++
 osx_image: xcode8.2
 xcode_project: XcodeCITest.xcodeproj
 xcode_scheme: XcodeCITest
+
+script: make
